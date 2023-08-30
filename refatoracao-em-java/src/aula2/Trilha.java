@@ -30,8 +30,10 @@ public class Trilha {
             palestra.agendarPara(horarioCalculado);
             atividadesAgendadas.add(palestra);
 
-            int tempoDeDuracaoEmMinutos = palestra.lerTempoDeDuracao().toInt();
-            horarioCalculado = horarioCalculado.plusMinutes(tempoDeDuracaoEmMinutos);
+//          int tempoDeDuracaoEmMinutos = palestra.lerTempoDeDuracao().toInt();
+//          horarioCalculado = horarioCalculado.plusMinutes(tempoDeDuracaoEmMinutos);
+            
+            horarioCalculado = horarioCalculado.plusMinutes(palestra.lerTempoDeDuracao().toInt());
         }
         agendarNetworking();
     }
