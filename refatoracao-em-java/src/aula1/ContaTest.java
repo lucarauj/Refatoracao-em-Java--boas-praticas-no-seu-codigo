@@ -1,3 +1,5 @@
+package aula1;
+
 import org.junit.Test;
 
 import static org.junit.Assert.assertThat;
