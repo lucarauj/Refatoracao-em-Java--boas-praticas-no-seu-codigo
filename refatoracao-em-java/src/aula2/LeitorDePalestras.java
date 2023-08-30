@@ -7,10 +7,6 @@ public class LeitorDePalestras {
     Scanner scanner = new Scanner(System.in);
     private Palestra lerPalestra(Scanner scanner) {
         String linha = scanner.nextLine();
-        return lerPalestra(linha);
-    }
-
-    private Palestra lerPalestra(String linha) {
         int indiceDaDivisaoEntreNomeETempo = linha.lastIndexOf(' ');
 
         String nome = linha.substring(0, indiceDaDivisaoEntreNomeETempo);
@@ -21,4 +17,5 @@ public class LeitorDePalestras {
 
         return new Palestra(nome, duracao);
     }
+
 }
