@@ -10,55 +10,66 @@
 
 - Introduzir variável explicativa: 
 ```
-selecionar "Refactor" e "Extract Local Variable", fornecer um nome para a nova variável e confirmar. 
-A IDE atribuirá a expressão selecionada à nova variável e substituirá o local onde a expressão é usada pela nova variável;
+- Selecione "Refactor" e "Extract Local Variable".
+- Escolha um nome para a nova variável e confirme.
+- A expressão selecionada será atribuída à nova variável.
+- Substitua todas as ocorrências da expressão pela nova variável.
 ```
 
 <br>
 
 - Internalizar variável temporária: 
 ```
-selecionar "Refactor" e "Inline" e confirme a refatoração. 
-A IDE removerá a variável e colocará a expressão atribuída anteriormente a ela em todos os locais onde a variável era usada;
+- Selecione "Refactor" e "Inline" e confirme.
+- A variável será removida e a expressão atribuída a ela substituirá seus usos.
 ```
 <br>
 
 - Substituir variável temporária por consulta: 
 ```
-Verificar se a variável recebe mais de uma atribuição, por meio de inserção do modificador de acesso final à variável.
-Se ela sofrer apenas uma atribuição, ela poderá participar dessa refatoração. 
-Em seguida, selecionar o lado direito da atribuição e aplicar a técnica "extract method". 
-Por último, substituir todos os pontos onde a variável é usada pelo novo método, e remover a variável, visto que ela não é mais útil;
+- Verifique se a variável tem apenas uma atribuição (use "final" se necessário).
+- Selecione o lado direito da atribuição e aplique "extract method".
+- Substitua todas as referências à variável pelo novo método.
 ```
 <br>
 
 - Dividir variável temporária: 
 ```
-Selecionar "Refactor" e "Rename", para podermos renomear a variável com o valor que queremos que ela tenha na sua primeira atribuição. 
-Em seguida, a declaramos como final. 
-Assim, a IDE nos informará onde mais ocorrem atribuições a ela, visto que uma variável final aceita apenas uma atribuição. 
-Com isso, podemos ir criando novas variáveis, e substituindo a anterior por essas novas variáveis;
+- Use "Refactor" e "Rename" para renomear a variável com seu valor inicial.
+- Declare a variável como "final" para encontrar todas as atribuições.
+- Crie novas variáveis para cada atribuição seguinte.
+- Substitua a variável original por essas novas variáveis.
 ```
 
 <br>
 
 - Remover atribuições a parâmetros: 
 ```
-A definir
+- Identifique parâmetros alterados no método.
+- Crie variáveis para cada parâmetro e atribua os valores.
+- Substitua as referências ao parâmetro pela nova variável.
 ```
 
 <br>
 
 - Substituir método por objeto método: 
 ```
-A definir
+- Crie uma classe com nome do método e o método como atributo.
+- Crie atributos correspondentes para cada parâmetro.
+- Crie um construtor que inicialize esses atributos.
+- Crie um método executar() na nova classe com a lógica do método antigo.
+- Copie o código do método antigo para o novo método.
+- Realize ajustes necessários na nova classe.
+- Substitua chamadas ao método antigo pela nova classe.
 ```
 
 <br>
 
 - Substituir algorítmo: 
 ```
-A definir
+- Quando um método parece confuso, reescreva-o para clareza.
+- Certifique-se de que nenhuma refatoração prévia é necessária.
+- Algumas refatorações podem tornar essa substituição desnecessária.
 ```
 
 <br>
