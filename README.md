@@ -42,6 +42,20 @@ Com isso, podemos ir criando novas variáveis, e substituindo a anterior por ess
 
 <br>
 
+- Remover atribuições a parâmetros: 
+```
+A definir
+```
+
+<br>
+
+- Substituir método por objeto método: 
+```
+A definir
+```
+
+<br>
+
 ## 👨‍🎓 Aluno
 
 #### Lucas Araujo
