@@ -56,6 +56,13 @@ A definir
 
 <br>
 
+- Substituir algorítmo: 
+```
+A definir
+```
+
+<br>
+
 ## 👨‍🎓 Aluno
 
 #### Lucas Araujo
